@@ -26,7 +26,7 @@ export default class AutoSizedImage extends PureComponent {
     if (this.props.style.width || this.props.style.height) {
       return;
     }
-    Image.getSize(this.props.source.uri, (w, h) => {
+    await Image.getSize(this.props.source.uri, (w, h) => {
       this.setState({width: w, height: h});
     });
   }
