@@ -16,7 +16,7 @@ export default class AutoSizedImage extends React.Component {
     this.state = {
       // set width 0 is for preventing mipmapping in iOS
       // You must specify a width and height for the image %s
-      width: this.props.style.width || 0,
+      width: this.props.style.width || width,
       height: this.props.style.height || 0,
     };
   }
