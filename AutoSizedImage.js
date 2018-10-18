@@ -4,7 +4,7 @@ import {
   Dimensions,
 } from 'react-native';
 
-const {width} = Dimensions.get('window');
+let width = Dimensions.get('window').width - 32;
 
 const baseStyle = {
   backgroundColor: 'transparent',
