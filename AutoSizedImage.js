@@ -53,6 +53,6 @@ export default class AutoSizedImage extends React.Component {
 
     console.log('image ', style, source)
 
-    return <Image style={style} source={source} />;
+    return <Image style={style} source={{uri: source.uri}} />;
   }
 }
